@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tidal Rush – Water Ride Promo</title>
+  <style>
+    :root{
+      --bg:#0b1220; --ink:#eef2f7; --muted:#a9b3c7; --accent:#32d1ff; --accent2:#4ef0b8;
+      --card:#111a2e; --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial,sans-serif;background:linear-gradient(180deg,#0b1220, #0b1220 40%, #0e1b33 100%);color:var(--ink)}
+    .container{max-width:1100px;margin:0 auto;padding:24px}
+    header{position:relative;overflow:hidden;border-bottom:1px solid rgba(255,255,255,.08)}
+    .hero{display:grid;grid-template-columns:1.1fr 0.9fr;gap:28px;align-items:center;padding:64px 0}
+    .badge{display:inline-block;padding:6px 12px;border:1px solid rgba(255,255,255,.18);border-radius:999px;font-size:12px;color:var(--muted);letter-spacing:.4px}
+    h1{font-size:clamp(36px,6vw,64px);line-height:1.02;margin:12px 0 8px}
+    p.lead{font-size:clamp(16px,2.4vw,20px);color:var(--muted);max-width:60ch}
+    .cta{display:flex;gap:12px;margin-top:22px;flex-wrap:wrap}
+    .btn{appearance:none;border:0;padding:12px 18px;border-radius:14px;background:var(--accent);color:#001018;font-weight:700;cursor:pointer;box-shadow:var(--shadow)}
+    .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.2);color:var(--ink)}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:18px;padding:18px;box-shadow:var(--shadow)}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:42px 0}
+    .feature h3{margin:6px 0 6px;font-size:18px}
+    .feature p{margin:0;color:var(--muted);font-size:14px}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .gallery .tile{aspect-ratio:16/10;border-radius:14px;background:linear-gradient(135deg, rgba(50,209,255,.25), rgba(78,240,184,.2));border:1px dashed rgba(255,255,255,.22);display:flex;align-items:center;justify-content:center;color:var(--muted)}
+    .section{padding:48px 0}
+    .section h2{font-size:28px;margin:0 0 12px}
+    footer{border-top:1px solid rgba(255,255,255,.08);margin-top:48px}
+    .credits{color:var(--muted);font-size:13px}
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .features{grid-template-columns:1fr}
+      .gallery{grid-template-columns:1fr 1fr}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container hero">
+      <div>
+        <span class="badge">New for 2025</span>
+        <h1>Tidal Rush</h1>
+        <p class="lead">Dive into the UK's splashiest adventure. Dark tunnels, thunderous drops and a finale that drenches the brave. Are you ready?</p>
+        <div class="cta">
+          <a class="btn" href="#book">Book Now</a>
+          <a class="btn ghost" href="#trailer">Watch Trailer</a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="gallery">
+          <div class="tile">Hero Image</div>
+          <div class="tile">The Drop</div>
+          <div class="tile">Splash Zone</div>
+        </div>
+        <p class="credits" style="margin-top:12px">Tip: Replace these tiles with your own images or Adobe Express assets.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="section" id="features">
+      <h2>Why you'll love it</h2>
+      <div class="features">
+        <div class="card feature">
+          <h3>60-second adrenaline</h3>
+          <p>Perfect teaser length for social and web. Big drop, big splash, big smiles.</p>
+        </div>
+        <div class="card feature">
+          <h3>Accessible thrills</h3>
+          <p>Clear signage, dedicated viewing areas, and rider guidance.</p>
+        </div>
+        <div class="card feature">
+          <h3>Made for mobile</h3>
+          <p>Lightning-fast to scan with bold text and strong imagery.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2>About Tidal Rush</h2>
+      <p class="lead">Inspired by coastal storms, Tidal Rush blends immersive theming with heart‑stopping drops. Swap the placeholders with your copy to publish instantly.</p>
+    </section>
+
+    <section class="section" id="book">
+      <h2>Plan your visit</h2>
+      <div class="card" style="display:grid;gap:12px">
+        <label>Choose date:<br><input type="date" style="padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:#0f1a33;color:var(--ink)"></label>
+        <a class="btn" href="#">Get tickets</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container" style="padding:24px 0">
+      <p class="credits">© 2025 Tidal Rush • Demo page for classroom use. Replace content in Adobe Express or your CMS.</p>
+    </div>
+  </footer>
+</body>
+</html>
